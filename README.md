@@ -1,6 +1,8 @@
 # EIP4_Session2
 
 ## Logs for 20 epochs
+
+```
 Model: "sequential_37"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -58,10 +60,10 @@ activation_34 (Activation)   (None, 10)                0
 Total params: 11,874
 Trainable params: 11,686
 Non-trainable params: 188
+```
 
 
-
-
+```
 Train on 60000 samples, validate on 10000 samples
 Epoch 1/20
 
@@ -143,9 +145,12 @@ Epoch 20/20
 
 Epoch 00020: LearningRateScheduler setting learning rate to 0.000424869.
 60000/60000 [==============================] - 8s 130us/step - loss: 0.0208 - acc: 0.9932 - val_loss: 0.0205 - val_acc: 0.9941
+```
 
 ## result of model.evaluate
+```
 [0.020474573148114725, 0.9941]
+```
 
 ## Strategy
 
