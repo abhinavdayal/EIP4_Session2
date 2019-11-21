@@ -159,7 +159,8 @@ I applied several things that I learnt:
 1. Before first Max Pooling, I chose receptive field of 5x5, because for 28x28 image that is sufficient.
 2. I used less number of channels because the MNIST images are very simple and have only 10 classes to predict. So did not go beyond 16.
 3. I fixed final resolution to around 4x4 or more, because I must have at least as many pixels as classes. There were two ways, another max pooling, or multiple convolution layers. I tried both but got better accuracy with multipe conv layers with final resolution of 6x6. 
-4. As needed, I disabled bias in all conv layers using use_bias=False parameter.
+5. I tried with more layers also and goot 99.95+ accuracy initally and then I tried to go even lower in number of parameters.
+6. Finally, As needed, I disabled bias in all conv layers using use_bias=False parameter.
 
 I did experiment with several dropout rates, but actually not very clear on whether dropout should be applied on every layer or sometimes. The difference between train and validation accuracy seems to lower with epocs telling that things are improving. The train accuracy is consistently improving with every epocs, seems that we are on right track. And the validation accuracy is doing some zig zag but with an upward trend but since its difference from validation accuracy is reducing its a good sign.
 
