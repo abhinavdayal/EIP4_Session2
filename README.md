@@ -166,3 +166,5 @@ I did experiment with several dropout rates, but actually not very clear on whet
 The topic of overfitting is tricky as usually we call it to overfit when model is doing really well on training data but not so well on validation.
 
 I did not experiment removing normalization and dropouts. It was encouraging that with so little parameters we did achieve good learning accuracy. I even tried with less than 7000 parameters and in 20 epocs got arounf 99.93+ which is encouraging as well. It finally depends upon the computation power we have. For simple mnist, we do not need so many parameters as I used in Assignment 1. 
+
+It will be nice if we get some insights on what is loss and accuracy (bith training and validation) and how it is measured? I hope we will go through in depth of back propagation.
